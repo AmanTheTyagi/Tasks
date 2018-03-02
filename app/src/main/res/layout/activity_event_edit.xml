@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anuntah.tasks.Event_edit"
+    android:orientation="vertical"
+    android:background="#424242">
+
+
+    <EditText
+        android:id="@+id/edit_Title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:hint="Title"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:nextFocusDown="@id/edit_Content"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+    <EditText
+        android:id="@+id/edit_Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_margin="5dp"
+        android:hint="Content"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/edit_save"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:onClick="Edit_save"
+            android:background="@android:color/transparent"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"/>
+        <Button
+            android:id="@+id/edit_discard"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="Discard"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="Edit_discard"/>
+    </LinearLayout>
+</LinearLayout>

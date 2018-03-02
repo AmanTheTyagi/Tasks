@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anuntah.tasks.Event_display"
+    android:orientation="vertical"
+    android:background="#424242">
+
+    <TextView
+        android:id="@+id/display_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Title"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColorHint="@android:color/white"
+        android:layout_margin="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/display_Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:text="Content"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/transparent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/display_comments"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:text="Comments:"
+            android:textColor="@android:color/white"/>
+
+        <ListView
+            android:id="@+id/display_commentListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+    <Button
+        android:id="@+id/display_edit"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:text="Edit"
+        android:onClick="Display_edit" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"/>
+    <Button
+        android:id="@+id/display_delete"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:text="Delete"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:onClick="Display_delete"/>
+    </LinearLayout>
+</LinearLayout>

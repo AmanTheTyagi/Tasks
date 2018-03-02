@@ -1,0 +1,4 @@
+#Fri Mar 02 22:41:35 IST 2018
+base.0=C\:\\Users\\Aman Tyagi\\Desktop\\ToDoApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
